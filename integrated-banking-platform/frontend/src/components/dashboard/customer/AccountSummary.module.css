@@ -1,0 +1,57 @@
+.container {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.accounts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.accountCard {
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.accountCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accountType {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.accountNo {
+  font-family: monospace;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.balance {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.loading, .error {
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
