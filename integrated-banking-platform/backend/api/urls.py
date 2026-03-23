@@ -14,3 +14,10 @@ router.register(r'transactions', TransactionViewSet)
 urlpatterns = [
     path('', include(router.urls)),
 ]
+from .views import ledger as ledger_views
+
+router.register(r'ledger', ledger_views.LedgerViewSet, basename='ledger')
+from rest_framework.routers import DefaultRouter
+router = DefaultRouter()
+router.register(r'ledger', LedgerViewSet, basename='ledger')
+urlpatterns = router.urls
