@@ -1,0 +1,6 @@
+# Core Django stack
+django==4.2.*
+djangorestframework==3.14.*
+
+# Development
+python-decouple==3.8
