@@ -1,0 +1,12 @@
+{
+  "name": "integrated-banking-platform",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
