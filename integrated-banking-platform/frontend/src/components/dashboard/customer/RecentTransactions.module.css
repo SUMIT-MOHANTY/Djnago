@@ -1,0 +1,68 @@
+.container {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-left: 3px solid #e0e0e0;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.transaction.pending {
+  border-left-color: #ffc107;
+}
+
+.transaction.complete {
+  border-left-color: #28a745;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.details {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.status {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+.loading, .error {
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
