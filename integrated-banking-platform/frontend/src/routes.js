@@ -12,3 +12,16 @@ const Routes = () => (
 );
 
 export default Routes;
+
+import LedgerPage from './pages/ledger';
+
+const updatedRoutes = [
+  ...routes,
+  {
+    path: '/ledger',
+    element: <LedgerPage />,
+    protected: true
+  }
+];
+
+export default updatedRoutes;
